@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsAid</title>
+</head>
+<body>
+
+<div role="navigation">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#form-content" class="skip-link">Skip to Formular</a>
+</div>
+
+<header>
+    <img src="nomination_tool_logo.jpg" alt="nomination tool logo">
+    <nav aria-label="Main Menu">
+        <div><a href="#">Home</a></div>
+        <div><a href="#">Profile</a></div>
+    </nav>
+    <nav aria-label="User Information">
+        <a href="#">Joe Bloggs</a>
+        <img src="joe_bloggs_profile_image.jpg" alt="Photograph of Joe Bloggs">
+        <a href="#">Logout</a>
+        <a href="#">Settings</a>
+    </nav>
+</header>
+
+<main id="main-content">
+    <div role="region">
+        <div>
+            <h1>Joe Bloggs</h1>
+            <p>Basketball</p>
+            <img src="joe_bloggs_profile_image.jpg" alt="Photograph of Joe Bloggs">
+        </div>
+        <div class="athlete-statistics">
+            <p>92% of the nominations for is complete</p>
+            <ul>
+                <li>Sport: 50%</li>
+                <li>Profile: 40%</li>
+            </ul>
+        </div>
+    </div>
+    <nav id="secondary-menu" aria-label="Secondary Menu">
+        <a href="#">Welcome</a>
+        <a href="#">Athlete Details</a>
+        <a href="#">Sport</a>
+        <a href="#">Results and Achievements</a>
+        <a href="#">Costs</a>
+        <a href="#">Aims</a>
+        <a href="#">Profile</a>
+        <a href="#">Athlete Declaration</a>
+        <a href="#">History</a>
+    </nav>
+
+    <div id="form-content" role="region">
+        <form>
+            <h2>Congratulations</h2>
+            <p>Your sport's national governing body has nominated you for a SportsAid Award to help you with your training and competition costs next year.</p>
+            <p>Please ensure you complete this nomination process by Day Date Month Year.</p>
+            <h2>Data Protection Notice</h2>
+
+            <p id="use-of-personal-information-0">Use of personal information</p>
+            <p id="use-of-personal-information-1">I confirm that by using SportsAid's services I am consenting to permit SportsAid and its third party service providers to use my personal information for the purposes set out and in the manner described in this notice.</p>
+            <input
+                type="checkbox"
+                id="use-of-personal-information"
+                name="use-of-personal-information"
+                aria-labelledby="use-of-personal-information-0 use-of-personal-information-1">
+
+            <p id="use-of-personal-information-for-mailing-0">Use of personal information for mailing about additional information and SportsAid related events</p>
+            <p id="use-of-personal-information-for-mailing-1">SportsAid would like to be able to send you information about its activities such as events and additional benefits it offers to athletes. Please confirm that you are happy to receive this sort of information and tick the boxes below according to your preference.</p>
+            <input
+                type="checkbox"
+                id="use-of-personal-information-for-mailing"
+                name="use-of-personal-information-for-mailing"
+                aria-labelledby="use-of-personal-information-for-mailing-0 use-of-personal-information-for-mailing-1">
+
+            <p id="data-protection-notice-0">Data Protection Notice</p>
+            <p id="data-protection-notice-1">I confirm that I have read and understood the Data Protection Notice herein and I agree with the terms within.</p>
+            <input
+                type="checkbox"
+                id="data-protection-notice"
+                name="data-protection-notice"
+                aria-labelledby="data-protection-notice-0 data-protection-notice-1">
+
+            <fieldset>
+                <legend> Are you over 18?</legend>
+                <p id="are-you-over-18-0">By ticking the box labeled "Under 18" you are confirming that you have gained the consent of your parent or guardian to apply for this award and to share your own personal data and the personal data about your parent/guardian (see parent/guardian data capture fields [below]) with SportsAid for the purposes of considering your application (as described in our data protection notice) and so that we can contact your parent/guardian to verify his/her consent.</p>
+                <input
+                    type="radio"
+                    name="age"
+                    value="over-18"
+                    aria-labelledby="are-you-over-18-0 are-you-over-18">
+                <p id="are-you-over-18">Over 18</p>
+                <input
+                    type="radio"
+                    name="age"
+                    value="under-18"
+                    aria-labelledby="are-you-over-18-0 under-18">
+                <p id="under-18">Under 18</p>
+            </fieldset>
+
+            <label hidden for="parent-guardian-name">Name of Parent/Guardian</label>
+            <input type="text" id="parent-guardian-name" name="parent-guardian-name" placeholder="Name of Parent/Guardian">
+
+            <label hidden for="parent-guardian-email">Email of Parent/Guardian</label>
+            <input type="email" id="parent-guardian-email" name="parent-guardian-email" placeholder="Email of Parent/Guardian">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+
+</main>
+
+<footer>
+    <p>Copyright SportsAid 2024</p>
+</footer>
+
+</body>
+</html>
+
+
